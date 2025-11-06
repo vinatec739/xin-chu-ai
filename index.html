@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xin Chữ Cùng AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <img id="app-logo" src="logo.png" alt="Logo Xin Chữ AI">
+
+    <section id="input-section" class="container">
+        
+        <img id="loctho-image" src="loctho.png" alt="Ông Lộc Thọ">
+        
+        <h1>🙏 Xin Chữ Đầu Xuân Cùng AI</h1>
+        <p>Hãy gửi gắm những mong muốn, khát vọng của bạn trong năm mới.</p>
+        <textarea id="mong-muon-input" rows="4" placeholder="Ví dụ: Tôi mong muốn năm nay công việc suôn sẻ, gia đình bình an, tài lộc dồi dào."></textarea>
+        <button id="submit-btn">Khởi Tâm Cầu Chữ</button>
+    </section>
+
+    <section id="loading-section" class="container hidden">
+        <div class="spinner"></div>
+        <h2>AI đang lắng nghe và cảm nhận tâm ý của bạn...</h2>
+        <p>Công nghệ cảm xúc, Nét chữ khai tâm</p>
+    </section>
+
+    <section id="result-section" class="container hidden">
+        <div class="result-card">
+            <div id="watermark-text" class="watermark-overlay">Created by Que Anh</div>
+            
+            <h3 class="card-title">Chữ Thư Pháp Dành Cho Bạn</h3>
+            
+            <div id="chu-chon-container">
+                <div class="calligraphy-word">PHÚC</div>
+                <div class="calligraphy-word">LỘC</div>
+            </div>
+            
+            <p id="loi-binh" class="loi-binh">Hai chữ này đại diện cho những điều tốt đẹp...</p>
+        </div>
+
+        <div class="button-group">
+            <button id="download-btn">Tải Ảnh Xin Chữ</button>
+            <button id="quay-lai-btn" class="secondary-btn">Gửi Lời Nguyện Khác</button>
+        </div>
+    </section>
+
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script> 
+    <script src="script.js"></script>
+</body>
+</html>

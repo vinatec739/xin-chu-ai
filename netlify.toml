@@ -1,0 +1,6 @@
+[build]
+  # Thư mục chứa các file HTML/CSS/JS tĩnh của bạn
+  publish = "." 
+  
+  # Yêu cầu Netlify tìm kiếm Serverless Functions trong thư mục 'functions'
+  functions = "functions"

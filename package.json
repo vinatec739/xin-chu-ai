@@ -1,0 +1,10 @@
+{
+  "name": "xin-chu-ai-function",
+  "version": "1.0.0",
+  "description": "Netlify Function for AI calligraphy word generator.",
+  "main": "functions/xin-chu.js",
+  "dependencies": {
+    "@google/genai": "latest",
+    "html2canvas": "^1.4.1"
+  }
+}
