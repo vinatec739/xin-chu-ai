@@ -1,5 +1,5 @@
 // Thay thế bằng URL của Serverless Function (Netlify/Vercel/Google Cloud)
-const API_ENDPOINT = 'http://localhost:8888/.netlify/functions/xin-chu'; 
+const API_ENDPOINT = '/.netlify/functions/xin-chu'; 
 
 const submitBtn = document.getElementById('submit-btn');
 const inputSection = document.getElementById('input-section');
