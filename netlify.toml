@@ -1,6 +1,11 @@
 [build]
-  # Thư mục chứa các file HTML/CSS/JS tĩnh của bạn
-  publish = "." 
-  
-  # Yêu cầu Netlify tìm kiếm Serverless Functions trong thư mục 'functions'
-  functions = "functions"
+  # Đặt thư mục functions, dù đã là mặc định, nhưng giúp đảm bảo
+  functions = "functions" 
+
+# Cấu hình cho mọi functions
+[functions."*"] 
+  # Tăng thời gian timeout lên 30 giây
+  timeout = 30 
+  # Chỉ định node bundler và external modules
+  node_bundler = "esbuild"
+  external_node_modules = ["@google/genai"]
